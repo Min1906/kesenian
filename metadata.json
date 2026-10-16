@@ -1,0 +1,6 @@
+{
+  "name": "Barongan Blora - Warisan Budaya Takbenda",
+  "description": "Portal kebudayaan seni tradisi Barongan Blora: eksplorasi magis Singo Barong, galeri tokoh berfilosofi, soundboard instrumen gamelan interaktif, direktori sanggar, dan kalender festival pentas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

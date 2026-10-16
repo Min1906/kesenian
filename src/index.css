@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'EB Garamond', 'Playfair Display', Georgia, serif;
+    --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+    --font-heading: 'Playfair Display', 'Cinzel', serif;
+    --font-body: 'EB Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-heading {
+  font-family: 'Playfair Display', 'Cinzel', Georgia, serif;
+}
+
+.font-garamond {
+  font-family: 'EB Garamond', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'EB Garamond', Georgia, serif;
+}
+
+/* Vintage Paper Patina & Parchment Styling */
+.vintage-parchment {
+  background-color: #F5EEDB;
+  color: #241A12;
+  background-image: radial-gradient(#241A12 0.4px, transparent 0.4px);
+  background-size: 16px 16px;
+}
+
+.vintage-dark-wood {
+  background-color: #17110C;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Vintage Photo Sepia Tone & Subtle Paper Vignette */
+.vintage-photo {
+  filter: sepia(0.24) contrast(1.06) brightness(0.92) saturate(0.95);
+  transition: filter 0.4s ease;
+}
+
+.vintage-photo:hover {
+  filter: sepia(0.12) contrast(1.08) brightness(0.96) saturate(1.05);
+}
+
+/* Antique Double Hairline Borders */
+.vintage-border {
+  border: 1px solid rgba(197, 155, 72, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(197, 155, 72, 0.15);
+}
+
+.vintage-frame {
+  position: relative;
+  border: 1px solid rgba(197, 155, 72, 0.4);
+}
+
+.vintage-frame::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(197, 155, 72, 0.2);
+  pointer-events: none;
+}
+
+/* Antique Wax Seal & Rubber Stamp */
+.vintage-stamp {
+  display: inline-block;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 10px;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  border: 1.5px dashed rgba(197, 155, 72, 0.6);
+  color: #D4AF37;
+  transform: rotate(-1.5deg);
+}
+
+.vintage-wax-seal {
+  background: radial-gradient(circle at 35% 35%, #991B1B, #5C1010);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.25), inset 0 -2px 4px rgba(0, 0, 0, 0.4);
+  border: 1px solid #B91C1C;
+}
+
+/* Drop cap for vintage opening paragraphs */
+.vintage-drop-cap::first-letter {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  font-size: 3.25rem;
+  line-height: 0.85;
+  float: left;
+  margin-right: 0.6rem;
+  margin-top: 0.2rem;
+  color: #C59B48;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom Antique Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #15100B;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B2A1D;
+  border-radius: 2px;
+  border: 1px solid #231911;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #782323;
+}
